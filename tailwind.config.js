@@ -5,7 +5,7 @@ module.exports = {
     colors: {
       fontColor: "#1A120B",
       yellowStar: "#FFD966",
-      bgFirst: "#ededdf",
+      white: "#fff",
     },
     extend: {},
   },

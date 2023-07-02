@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="w-full sm:max-w-7xl mx-auto py-6 px-3">
-      <div className="  mx-0 sm:mx-auto px-4 sm:px-0">
+      <div className="  mx-0 sm:mx-auto px-1 sm:px-0">
         <div className="flex flex-wrap sm:justify-between">
           <div className="w-full sm:w-1/4 lg:w-1/6 mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-3">Tentang Kami</h3>
