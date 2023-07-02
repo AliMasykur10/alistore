@@ -6,35 +6,35 @@ export default function Footer() {
       <div className="  mx-0 sm:mx-auto px-1 sm:px-0">
         <div className="flex flex-wrap sm:justify-between">
           <div className="w-full sm:w-1/4 lg:w-1/6 mb-6 md:mb-0">
-            <h3 className="text-lg font-semibold mb-3">Tentang Kami</h3>
+            <h3 className="text-lg font-semibold mb-3">About Me</h3>
             <ul className="list-none">
               <li className="mb-2">
-                <a href="#!">Tentang Perusahaan</a>
+                <a href="#!">Company Profile</a>
               </li>
               <li className="mb-2">
-                <a href="#!">Tim Kami</a>
+                <a href="#!">Teams</a>
               </li>
               <li className="mb-2">
-                <a href="#!">Kontak</a>
+                <a href="#!">Contacs</a>
               </li>
             </ul>
           </div>
           <div className="w-full md:w-1/4 lg:w-1/6 mb-6 md:mb-0">
-            <h3 className="text-lg font-semibold mb-3">Bantuan</h3>
+            <h3 className="text-lg font-semibold mb-3">Help</h3>
             <ul className="list-none">
               <li className="mb-2">
-                <a href="#!">Cara Berbelanja</a>
+                <a href="#!">How to Shop</a>
               </li>
               <li className="mb-2">
-                <a href="#!">Pembayaran</a>
+                <a href="#!">Payment</a>
               </li>
               <li className="mb-2">
-                <a href="#!">Pengiriman</a>
+                <a href="#!">Shipping</a>
               </li>
             </ul>
           </div>
           <div className="w-full md:w-1/4 lg:w-1/6 mb-6 md:mb-0">
-            <h3 className="text-lg font-semibold mb-3">Kategori</h3>
+            <h3 className="text-lg font-semibold mb-3">Category</h3>
             <ul className="list-none">
               <li className="mb-2">
                 <a href="#!">Electronics</a>
