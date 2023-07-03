@@ -6,7 +6,7 @@ import Description from "./pages/description/Description";
 
 function App() {
   return (
-    <div className="App flex flex-col">
+    <div className="App flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow">
         <Routes>
@@ -14,7 +14,7 @@ function App() {
           <Route path="/product/:id" element={<Description />} />
         </Routes>
       </main>
-      <Footer   />
+      <Footer />
     </div>
   );
 }

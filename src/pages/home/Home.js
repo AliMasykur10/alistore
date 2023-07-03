@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../../components/organisms/hero/Hero";
 import Product from "../../components/organisms/product/Product";
 import NewArrival from "../../components/organisms/newArrival/NewArrival";
