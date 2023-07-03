@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../../components/organisms/hero/Hero";
 import Product from "../../components/organisms/product/Product";
+import NewArrival from "../../components/organisms/newArrival/NewArrival";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Product title="Men's Clothing" categori="men's clothing" />
       <Product title="Women's Clothing" categori="women's clothing" />
+      <NewArrival />
       <Product title="Jewelery" categori="jewelery" />
       <Product title="Electronics" categori="electronics" />
     </div>
