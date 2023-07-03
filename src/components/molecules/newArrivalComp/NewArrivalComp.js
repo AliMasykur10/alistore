@@ -30,14 +30,12 @@ export default class NewArrivalComp extends Component {
     };
 
     const { data } = this.state;
-    console.log(data);
     return (
-      <div>
-        <h2> Multiple items </h2>
+      <div className=" sm:w-2/3 ">
         <Slider {...settings}>
           {data.map((items, index) => (
             <div key={index}>
-              <img src={items.image} alt="" />
+              <img src={items.image} alt="" className="h-52" />
             </div>
           ))}
         </Slider>
