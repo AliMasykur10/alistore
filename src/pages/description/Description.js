@@ -28,13 +28,13 @@ export default function Description() {
   }
   //   console.log(data);
   return (
-    <div className="sm:max-w-7xl mx-auto my-6 flex gap-6">
-      <div className="basis-1/3">
+    <div className="sm:max-w-7xl mx-auto my-6 sm:flex gap-6 p-3 sm:p-0">
+      <div className="basis-1/3 mb-4 sm:mb-0 ">
         <img src={data.image} alt="" />
       </div>
 
       <div className="basis-2/3">
-        <h1 className="text-3xl font-bold mb-2 w-3/4 ">{data.title}</h1>
+        <h1 className=" text-xl sm:text-3xl font-bold mb-2 w-3/4 ">{data.title}</h1>
         <p className=" mb-5 ">Category : {data.category}</p>
         <p className="text-xl font-bold">${data.price}</p>
 
@@ -44,8 +44,8 @@ export default function Description() {
         </div>
 
         <div className="mt-10 ">
-          <h2 className="text-2xl font-bold mb-2 underline">Description</h2>
-          <p className=" w-3/4 text-xl tracking-wide">{data.description}</p>
+          <h2 className=" text-xl sm:text-2xl font-bold mb-2 underline">Description</h2>
+          <p className=" sm:w-3/4 text sm:text-xl tracking-wider ">{data.description}</p>
         </div>
       </div>
     </div>

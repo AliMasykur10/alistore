@@ -25,14 +25,16 @@ export default class NewArrivalComp extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      pauseOnHover: true,
     };
 
     const { data } = this.state;
     return (
-      <div className=" sm:w-2/4 ">
+      <div className=" sm:w-2/4 bg-white">
         <Slider {...settings}>
           {data.map((items, index) => (
             <div key={index} className="">

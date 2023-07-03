@@ -17,7 +17,9 @@ export default function Card({ data }) {
         <p className="text-gray-700 mb-4">${data.price}</p>
       </div>
       <div className=" flex gap-2 flex-col sm:justify-around sm:flex-row ">
-        <button className="bg-blue-500 hover:bg-blue-600 outline outline-1 font-semibold py-1 sm:py-2 sm:px-4 hover:bg-fontColor hover:text-white transition-colors ">Buy Now</button>
+        <Link to={`/product/${data.id}`}>
+          <button className="bg-blue-500 hover:bg-blue-600 outline outline-1 font-semibold py-1 sm:py-2 sm:px-4 hover:bg-fontColor hover:text-white transition-colors ">Buy Now</button>
+        </Link>
         <button className="bg-blue-500 hover:bg-blue-600 outline outline-1 font-semibold py-1 sm:py-2 sm:px-4 hover:bg-fontColor hover:text-white transition-colors ">Add to Cart</button>
       </div>
     </div>
