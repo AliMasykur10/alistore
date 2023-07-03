@@ -17,7 +17,7 @@ export default function Product({ title, categori }) {
   return (
     <div className="mb-4">
       <h1 className="text-2xl font-bold mb-3">{title}</h1>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 overflow-x-scroll sm:overflow-visible">
+      <div className="grid sm:grid-cols-4 gap-4 overflow-x-scroll sm:overflow-visible">
         {data.map((items, index) => (
           <Card key={index} data={items} />
         ))}

@@ -31,11 +31,11 @@ export default class NewArrivalComp extends Component {
 
     const { data } = this.state;
     return (
-      <div className=" sm:w-2/3 ">
+      <div className=" sm:w-2/4 ">
         <Slider {...settings}>
           {data.map((items, index) => (
-            <div key={index}>
-              <img src={items.image} alt="" className="h-52" />
+            <div key={index} className="">
+              <img src={items.image} alt="" className=" h-32 sm:h-52 bg-white p-6" />
             </div>
           ))}
         </Slider>
