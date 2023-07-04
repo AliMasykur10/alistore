@@ -6,7 +6,7 @@ import { addToCart } from "../../../services/reducer/carrtSlice/CartSlice";
 export default function Card({ data }) {
   const dispatch = useDispatch();
 
-  const handleAddToCart = (productId) => {
+  const handleAddToCart = () => {
     dispatch(addToCart(data));
   };
 
@@ -28,7 +28,7 @@ export default function Card({ data }) {
           <Link to={`/product/${data.id}`}>Buy Now</Link>
         </button>
 
-        <button onClick={() => handleAddToCart(data.id)} className="bg-blue-500 hover:bg-blue-600 outline outline-1 font-semibold py-1 sm:py-2 sm:px-4 hover:bg-fontColor hover:text-white transition-colors ">
+        <button onClick={() => handleAddToCart()} className="bg-blue-500 hover:bg-blue-600 outline outline-1 font-semibold py-1 sm:py-2 sm:px-4 hover:bg-fontColor hover:text-white transition-colors ">
           Add to Cart
         </button>
       </div>
