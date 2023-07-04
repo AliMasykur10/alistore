@@ -1,8 +1,11 @@
 import React from "react";
 import logo from "./../../../assets/bx-cart-alt.svg";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Navbar() {
+  const cartItems = useSelector((state) => state.cart);
+
   return (
     <div className="navbar">
       <nav className="flex justify-between sm:max-w-7xl mx-auto items-center p-4">
@@ -12,10 +15,13 @@ export default function Navbar() {
             <span className=" text-fontColor text-xl sm:text-3xl font-semibold">AliStore</span>
           </div>
         </Link>
-        <div className="cursor-pointer">
+        <div className="cursor-pointer flex ">
           <Link to="/cart">
             <box-icon type="solid" name="cart" size="lg" />
           </Link>
+          <div>
+            <p className="text-lg px-2 py-1 rounded  bg-fontColor text-white ">{cartItems.length}</p>
+          </div>
         </div>
       </nav>
     </div>
