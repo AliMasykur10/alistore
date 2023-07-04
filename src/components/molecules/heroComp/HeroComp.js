@@ -9,9 +9,9 @@ export default function HeroComp({ data }, key) {
         <Link to={`/product/${data.id}`}>
           <h1 className="text-xl sm:text-3xl mb-5 font-bold">{data.title}</h1>
         </Link>
-        <Link to="#">
-          <button className="px-4 py-2 outline  outline-1 hover:bg-fontColor hover:text-white transition-colors">Buy Now</button>
-        </Link>
+        <button className="px-4 py-2 outline  outline-1 hover:bg-fontColor hover:text-white transition-colors">
+          <Link to={`/product/${data.id}`}>Buy Now</Link>
+        </button>
       </div>
       <div className=" h-auto mx-auto sm:h-96">
         <Link to={`/product/${data.id}`}>

@@ -17,7 +17,7 @@ export default function Description() {
         setloading(false);
       })
       .catch();
-  }, []);
+  }, [id]);
 
   if (loading) {
     return (
@@ -40,11 +40,11 @@ export default function Description() {
 
         <div className="mt-4">
           <button className="text-xl font-bold px-4 py-2 outline outline-1 m-3 hover:bg-fontColor hover:text-white ">Buy</button>
-          <button className="text-xl font-bold px-4 py-2 outline outline-1 m-3 hover:bg-fontColor hover:text-white">Ad to Cart</button>
+          <button className="text-xl font-bold px-4 py-2 outline outline-1 m-3 hover:bg-fontColor hover:text-white">Add to Cart</button>
         </div>
 
         <div className="mt-10 ">
-          <h2 className=" text-xl sm:text-2xl font-bold mb-2 underline">Description</h2>
+          <h2 className=" text-xl sm:text-2xl font-bold mb-2">Description</h2>
           <p className=" sm:w-3/4 text sm:text-xl tracking-wider ">{data.description}</p>
         </div>
       </div>

@@ -12,11 +12,10 @@ export default function Navbar() {
             <span className=" text-fontColor text-xl sm:text-3xl font-semibold">AliStore</span>
           </div>
         </Link>
-        <div className="sm:flex justify-center items-center relative hidden sm: ">
-          <input type="text" placeholder="Search" className="px-4 py-2  sm:w-72 rounded-md bg-white focus:outline-none" />
-          <button className="absolute right-2 top-2">
-            <box-icon name="search-alt-2"></box-icon>
-          </button>
+        <div className="cursor-pointer">
+          <Link to="/cart">
+            <box-icon type="solid" name="cart" size="lg" />
+          </Link>
         </div>
       </nav>
     </div>
