@@ -26,7 +26,7 @@ function App() {
       <main className="grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/product/:id" element={<Description />} />
+          <Route path="/product/:title/:id" element={<Description />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
       </main>

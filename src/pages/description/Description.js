@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addToCart } from "../../services/reducer/carrtSlice/CartSlice";
+import { Helmet } from "react-helmet";
 
 export default function Description() {
   const [data, setdata] = useState([]);
@@ -37,6 +38,9 @@ export default function Description() {
   };
   return (
     <div className="sm:max-w-7xl mx-auto my-6 sm:flex gap-6 p-3 sm:p-0">
+      <Helmet>
+        <title>Ali Store - {data.title}</title>
+      </Helmet>
       <div className="basis-1/3 mb-4 sm:mb-0 ">
         <img src={data.image} alt="" />
       </div>

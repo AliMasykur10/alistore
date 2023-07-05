@@ -30,7 +30,7 @@ export default class Hero extends Component {
     };
     const { data } = this.state;
     return (
-      <div className="bg-white mb-10">
+      <div className="bg-white mb-10 shadow-lg">
         <Slider {...settings}>
           {data.map((items, index) => (
             <HeroComp data={items} key={index} />

@@ -38,7 +38,7 @@ export default class NewArrivalComp extends Component {
         <Slider {...settings}>
           {data.map((items, index) => (
             <div key={index} className="">
-              <Link to={`/product/${items.id}`}>
+              <Link to={`/product/${items.title}/${items.id}`}>
                 <img src={items.image} alt="" className=" h-32 sm:h-52 bg-white p-6" />
               </Link>
             </div>

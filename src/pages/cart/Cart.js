@@ -9,7 +9,7 @@ export default function Cart() {
     <div className="sm:max-w-7xl mx-auto sm:flex gap-3 mt-5 p-3">
       <div className="basis-2/3">
         <h1 className="text-3xl font-bold mb-10 ">Cart List</h1>
-        <div className="">
+        <div>
           {cartEntities.length === 0 ? (
             <div>
               <p className="text-xl">There are no items in your Cart</p>
