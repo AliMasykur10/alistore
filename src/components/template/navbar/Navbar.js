@@ -7,7 +7,7 @@ export default function Navbar() {
   const cartItems = useSelector((state) => state.cart);
 
   return (
-    <div className="navbar">
+    <div className="navbar ">
       <nav className="flex justify-between sm:max-w-7xl mx-auto items-center p-4">
         <Link to="/">
           <div className="flex items-center">
@@ -20,7 +20,7 @@ export default function Navbar() {
             <box-icon type="solid" name="cart" size="lg" />
           </Link>
           <div>
-            <p className="text-xs px-2 py-1 rounded-full bg-fontColor text-white ">{cartItems.length}</p>
+            <p className="text-xs px-2 py-1 rounded-full bg-fontColor text-white ">{cartItems.ids.length}</p>
           </div>
         </div>
       </nav>

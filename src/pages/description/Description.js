@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
+import { addToCart } from "../../services/reducer/carrtSlice/CartSlice";
 
 export default function Description() {
   const [data, setdata] = useState([]);
@@ -8,6 +10,8 @@ export default function Description() {
 
   const params = useParams();
   const { id } = params;
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     axios
@@ -26,7 +30,10 @@ export default function Description() {
       </div>
     );
   }
-  //   console.log(data);
+
+  const handleAddToCart = () => {
+    dispatch(addToCart);
+  };
   return (
     <div className="sm:max-w-7xl mx-auto my-6 sm:flex gap-6 p-3 sm:p-0">
       <div className="basis-1/3 mb-4 sm:mb-0 ">
@@ -40,7 +47,9 @@ export default function Description() {
 
         <div className="mt-4">
           <button className="text-xl font-bold px-4 py-2 outline outline-1 m-3 hover:bg-fontColor hover:text-white ">Buy</button>
-          <button className="text-xl font-bold px-4 py-2 outline outline-1 m-3 hover:bg-fontColor hover:text-white">Add to Cart</button>
+          <button className="text-xl font-bold px-4 py-2 outline outline-1 m-3 hover:bg-fontColor hover:text-white" onClick={handleAddToCart}>
+            Add to Cart
+          </button>
         </div>
 
         <div className="mt-10 ">
