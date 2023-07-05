@@ -3,7 +3,6 @@ import CartList from "../../components/molecules/cartList/CartList";
 
 export default function Cart() {
   const cartItems = useSelector((state) => state.cart);
-  const dispatch = useDispatch();
 
   return (
     <div className="sm:max-w-7xl mx-auto sm:flex gap-3 mt-5 p-3">

@@ -20,7 +20,7 @@ export default function Navbar() {
             <box-icon type="solid" name="cart" size="lg" />
           </Link>
           <div>
-            <p className="text-lg px-2 py-1 rounded  bg-fontColor text-white ">{cartItems.length}</p>
+            <p className="text-xs px-2 py-1 rounded-full bg-fontColor text-white ">{cartItems.length}</p>
           </div>
         </div>
       </nav>
