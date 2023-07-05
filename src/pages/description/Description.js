@@ -25,14 +25,15 @@ export default function Description() {
 
   if (loading) {
     return (
-      <div className="sm:max-w-7xl mx-auto">
-        <h1 className="text-xl font-bold">loading...</h1>
+      <div className="sm:max-w-7xl mt-20  mx-auto flex gap-3 justify-center items-center ">
+        <box-icon name="loader-alt" animation="spin" size="lg"></box-icon>
+        <h1 className="text-2xl font-bold">loading...</h1>
       </div>
     );
   }
 
   const handleAddToCart = () => {
-    dispatch(addToCart);
+    dispatch(addToCart(data));
   };
   return (
     <div className="sm:max-w-7xl mx-auto my-6 sm:flex gap-6 p-3 sm:p-0">
