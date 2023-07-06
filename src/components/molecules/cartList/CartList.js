@@ -21,7 +21,7 @@ export default function CartList({ data }) {
         <img src={data.image} alt="" className="h-24 mx-auto" />
       </div>
       <div className="basis-2/5">
-        <h1 className="text-xl font-bold">{data.title}</h1>
+        <h1 className=" text-sm sm:text-xl font-bold">{data.title}</h1>
         <p>${data.price}</p>
       </div>
       <div className="basis-1/5">
