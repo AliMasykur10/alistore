@@ -12,7 +12,7 @@ export default function Product({ title, categori }) {
         setdata(res.data);
       })
       .catch();
-  }, []);
+  }, [categori]);
 
   return (
     <div className="mb-4">

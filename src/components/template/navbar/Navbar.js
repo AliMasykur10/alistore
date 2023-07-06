@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./../../../assets/bx-cart-alt.svg";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 export default function Navbar() {
   const cartItems = useSelector((state) => state.cart);

@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk, createEntityAdapter, current } from "@reduxjs/toolkit";
+import { createSlice, createEntityAdapter } from "@reduxjs/toolkit";
 
 const cartAdapter = createEntityAdapter();
 
